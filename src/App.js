@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import "bootstrap";
+import "bootstrap/scss/bootstrap.scss"
+import React from 'react'
+import AddPost from './Components/AddPost';
+import Post from './Components/Post';
+class App extends React.Component {
+   
 
-function App() {
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <AddPost/>
+    <Post display='good morning'/>
     </div>
-  );
+  )
+  }
 }
 
 export default App;
